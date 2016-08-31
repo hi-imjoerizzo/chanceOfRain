@@ -25053,10 +25053,11 @@
 	    return React.createElement(
 	      'div',
 	      null,
+	      React.createElement('br', null),
 	      React.createElement(
 	        'h3',
 	        null,
-	        'Weather Component'
+	        'Current Weather'
 	      ),
 	      React.createElement(WeatherForm, { onSearch: this.handleSearch }),
 	      renderMessage()
@@ -26507,15 +26508,56 @@
 /* 250 */
 /***/ function(module, exports, __webpack_require__) {
 
-	'use strict';
+	"use strict";
 
 	var React = __webpack_require__(7);
 
 	var About = function About(props) {
 	  return React.createElement(
-	    'h3',
+	    "div",
 	    null,
-	    'About Component'
+	    React.createElement("br", null),
+	    React.createElement(
+	      "h1",
+	      { className: "text-centered" },
+	      "About"
+	    ),
+	    React.createElement(
+	      "p",
+	      null,
+	      "This is a weather application built on the React framework."
+	    ),
+	    React.createElement(
+	      "p",
+	      null,
+	      "Here are some of the tools that were used:"
+	    ),
+	    React.createElement("br", null),
+	    React.createElement(
+	      "ul",
+	      null,
+	      React.createElement(
+	        "li",
+	        null,
+	        React.createElement(
+	          "a",
+	          { href: "https://facebook.github.io/react" },
+	          "React"
+	        ),
+	        " - This is the JavaScript framework that was used."
+	      ),
+	      React.createElement("br", null),
+	      React.createElement(
+	        "li",
+	        null,
+	        React.createElement(
+	          "a",
+	          { href: "http://openweathermap.org" },
+	          "Open Weather Map"
+	        ),
+	        " - The Open Open Weather Map API was used to search for weather data by city name."
+	      )
+	    )
 	  );
 	};
 
@@ -26538,6 +26580,7 @@
 	  return React.createElement(
 	    'div',
 	    null,
+	    React.createElement('br', null),
 	    React.createElement(
 	      'h1',
 	      { className: 'text-centered' },
@@ -26565,8 +26608,80 @@
 	        null,
 	        React.createElement(
 	          Link,
+	          { to: '/?location=New York' },
+	          'New York, NY'
+	        )
+	      ),
+	      React.createElement(
+	        'li',
+	        null,
+	        React.createElement(
+	          Link,
+	          { to: '/?location=Los Angeles' },
+	          'Los Angeles, CA'
+	        )
+	      ),
+	      React.createElement(
+	        'li',
+	        null,
+	        React.createElement(
+	          Link,
+	          { to: '/?location=Seattle' },
+	          'Seattle, WA'
+	        )
+	      ),
+	      React.createElement(
+	        'li',
+	        null,
+	        React.createElement(
+	          Link,
+	          { to: '/?location=Green Bay' },
+	          'Green Bay, WI'
+	        )
+	      ),
+	      React.createElement(
+	        'li',
+	        null,
+	        React.createElement(
+	          Link,
 	          { to: '/?location=Rio' },
 	          'Rio, Brazil'
+	        )
+	      ),
+	      React.createElement(
+	        'li',
+	        null,
+	        React.createElement(
+	          Link,
+	          { to: '/?location=Turin' },
+	          'Turin, Italy'
+	        )
+	      ),
+	      React.createElement(
+	        'li',
+	        null,
+	        React.createElement(
+	          Link,
+	          { to: '/?location=Dublin' },
+	          'Dublin, Ireland'
+	        )
+	      ),
+	      React.createElement(
+	        'li',
+	        null,
+	        React.createElement(
+	          Link,
+	          { to: '/?location=Tokyo' },
+	          'Tokyo, Japan'
+	        )
+	      ),
+	      React.createElement(
+	        'li',
+	        null,
+	        React.createElement(
+	          Link,
+	          { to: '/?location=New Delhi' },
+	          'New Delhi, India'
 	        )
 	      )
 	    )
