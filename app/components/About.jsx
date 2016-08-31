@@ -4,7 +4,8 @@ var About = (props) => {
   return(
     <div>
       <br/>
-      <h1 className="text-centered">About</h1>
+      <br/>
+      <h1 className="text-center">About</h1>
       <p>This is a weather application built on the React framework.
       </p>
       <p>
@@ -18,8 +19,9 @@ var About = (props) => {
         </li>
         <br/>
         <li>
-          <a href="http://openweathermap.org">Open Weather Map</a> - The Open
-            Open Weather Map API was used to search for weather data by city name.
+          <a href="http://openweathermap.org">Open Weather Map</a> - The
+            Open Weather Map API was used to search for weather data by
+            city name.
         </li>
       </ul>
     </div>

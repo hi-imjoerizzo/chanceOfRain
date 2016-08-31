@@ -5,6 +5,7 @@ var Examples = (props) => {
   return(
     <div>
       <br/>
+      <br/>
       <h1 className="text-centered">Examples</h1>
       <p>Here are a few example locations to try out:</p>
       <ol>

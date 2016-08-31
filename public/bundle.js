@@ -25042,7 +25042,7 @@
 	      if (isLoading) {
 	        return React.createElement(
 	          'h3',
-	          { className: 'text-centered' },
+	          { className: 'text-center' },
 	          'Fetching Weather...'
 	        );
 	      } else if (temp && location) {
@@ -25054,11 +25054,13 @@
 	      'div',
 	      null,
 	      React.createElement('br', null),
+	      React.createElement('br', null),
 	      React.createElement(
 	        'h1',
-	        { className: 'text-centered' },
-	        'Current Weather'
+	        { className: 'text-center' },
+	        'Get Weather'
 	      ),
+	      React.createElement('br', null),
 	      React.createElement(WeatherForm, { onSearch: this.handleSearch }),
 	      renderMessage()
 	    );
@@ -25098,7 +25100,7 @@
 	        React.createElement('input', { type: 'text', ref: 'location' }),
 	        React.createElement(
 	          'button',
-	          { className: 'button expanded hallow' },
+	          { className: 'button expanded hollow' },
 	          'Get Weather'
 	        )
 	      )
@@ -25122,7 +25124,7 @@
 
 	  return React.createElement(
 	    "h3",
-	    { className: "text-centered" },
+	    { className: "text-center" },
 	    "It's ",
 	    temp,
 	    " degrees F in ",
@@ -26517,9 +26519,10 @@
 	    "div",
 	    null,
 	    React.createElement("br", null),
+	    React.createElement("br", null),
 	    React.createElement(
 	      "h1",
-	      { className: "text-centered" },
+	      { className: "text-center" },
 	      "About"
 	    ),
 	    React.createElement(
@@ -26555,7 +26558,7 @@
 	          { href: "http://openweathermap.org" },
 	          "Open Weather Map"
 	        ),
-	        " - The Open Open Weather Map API was used to search for weather data by city name."
+	        " - The Open Weather Map API was used to search for weather data by city name."
 	      )
 	    )
 	  );
@@ -26580,6 +26583,7 @@
 	  return React.createElement(
 	    'div',
 	    null,
+	    React.createElement('br', null),
 	    React.createElement('br', null),
 	    React.createElement(
 	      'h1',
